@@ -10,23 +10,32 @@
 </head>
 
 <body>
-    <header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
-        <div class="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
-          <!-- Logo y nombre -->
-          <div class="flex items-center space-x-3">
-            <img src="logo.png" alt="Logo BotsCol" class="w-10 h-10 object-contain">
-            <span class="text-xl font-bold text-blue-600">BotsCol Ingeniería</span>
-          </div>
-          
-          <!-- Navegación -->
-          <nav class="hidden md:flex space-x-8">
-            <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Inicio</a>
-            <a href="servicios.html" class="text-gray-700 hover:text-blue-600 font-medium">Servicios</a>
-            <a href="sobre_nosotros.html" class="text-gray-700 hover:text-blue-600 font-medium">Sobre Nosotros</a>
-            <a href="contacto.html" class="text-gray-700 hover:text-blue-600 font-medium">Contacto</a>
-          </nav>
-        </div>
-      </header>
+  <header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
+      <!-- Logo y nombre -->
+      <div class="flex items-center space-x-3">
+        <img src="logo.png" alt="Logo BotsCol" class="w-10 h-10 object-contain">
+        <span class="text-xl font-bold text-blue-600">BotsCol Ingeniería</span>
+      </div>
+  
+      <!-- Botón de menú para dispositivos pequeños -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-gray-700">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+  
+      <!-- Navegación -->
+      <nav id="nav-menu" class="hidden md:flex space-x-8">
+        <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Inicio</a>
+        <a href="servicios.html" class="text-gray-700 hover:text-blue-600 font-medium">Servicios</a>
+        <a href="sobre_nosotros.html" class="text-gray-700 hover:text-blue-600 font-medium">Sobre Nosotros</a>
+        <a href="contacto.html" class="text-gray-700 hover:text-blue-600 font-medium">Contacto</a>
+      </nav>
+    </div>
+  </header>
 
   <!-- Sección de Servicios -->
   <section class="py-16 bg-blue-50 mt-10">
@@ -145,6 +154,14 @@
           link.classList.add("text-blue-600", "font-bold");
         }
       });
+    });
+  </script>
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+  
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('hidden');
     });
   </script>
 </body>
