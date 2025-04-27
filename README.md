@@ -1,4 +1,4 @@
-# 🤖 Scraping de Resoluciones - Bogotá
+# 🤖 Portafolio Empresarial -  Botscol
 
 Este proyecto fue desarrollado con HTML y el framework Tailwind CSS para la empresa Botscol Ingenieria como portafolio de servicio.
 
