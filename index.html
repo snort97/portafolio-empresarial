@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portafolio de Automatización - UiPath</title>
+  <meta name="description" content="Portafolio profesional de automatización con UiPath. BotsCol ofrece soluciones inteligentes para optimizar procesos empresariales.">
+  <meta name="keywords" content="UiPath, automatización, RPA, bots, BotsCol, scraping, Orchestrator, Excel, DIAN, contabilidad">
+  <meta name="author" content="Alejandro Herrera Ocampo">
+  <title>Portafolio RPA con UiPath - BotsCol | Alejandro Herrera</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
   <style>
     .whatsapp-float {
       position: fixed;
@@ -16,51 +21,59 @@
 </head>
 <body class="bg-gray-100 text-gray-800">
   <!-- Logo BotsCol -->
-<div class="bg-blue-600 text-center py-4">
-  <img src="logo.png" alt="BotsCol Logo" class="mx-auto w-48 md:w-56">
-</div>
+  <header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
+      <!-- Logo y nombre -->
+      <div class="flex items-center space-x-3">
+        <img src="logo.png" alt="Logo BotsCol" class="w-10 h-10 object-contain">
+        <span class="text-xl font-bold text-blue-600">BotsCol Ingeniería</span>
+      </div>
+      
+      <!-- Navegación -->
+      <nav class="hidden md:flex space-x-8">
+        <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Inicio</a>
+        <a href="servicios.html" class="text-gray-700 hover:text-blue-600 font-medium">Servicios</a>
+        <a href="sobre_nosotros.html" class="text-gray-700 hover:text-blue-600 font-medium">Sobre Nosotros</a>
+        <a href="contacto.html" class="text-gray-700 hover:text-blue-600 font-medium">Contacto</a>
+      </nav>
+    </div>
+  </header>
 
-  <!-- Portada -->
-  <section class="bg-blue-600 text-white text-center py-16">
-    <h1 class="text-4xl font-bold">Automatización Inteligente para Empresas</h1>
-    <p class="text-xl mt-4">Optimiza procesos con UiPath, ahorra tiempo y dinero</p>
-    <p class="mt-6 text-sm">Alejandro Herrera Ocampo – RPA Developer</p>
-    <p class="text-sm">📧 alejom21400@gmail.com | 📱 +57 322 557 6146</p>
+  <!-- Espacio para que el contenido no quede debajo del header -->
+  <div class="h-20"></div>
+
+  <section class="bg-blue-400 text-white py-16">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <!-- Título de la izquierda -->
+      <div class="w-full md:w-1/2 text-center md:text-left">
+        <h1 class="text-6xl font-bold animate__animated animate__fadeInLeft">BotsCol</h1>
+        <p class="text-2xl mt-4 animate__animated animate__fadeInLeft animate__delay-1s">Automatización Inteligente para Empresas</p>
+      </div>
+  
+      <!-- Imágenes dinámicas a la derecha -->
+      <div class="w-full md:w-1/2">
+        <div class="relative">
+          <img src="images/imagen_index.webp" alt="Imagen de portada izquierda" class="w-full h-auto object-cover animate__animated animate__fadeInRight animate__delay-1s">
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Sobre mí -->
-  <section class="max-w-5xl mx-auto py-12 px-4">
-    <h2 class="text-2xl font-semibold mb-4">¿Quién soy?</h2>
-    <p class="mb-4">Soy desarrollador en automatización de procesos con UiPath. Ayudo a empresas a optimizar su tiempo y recursos eliminando tareas repetitivas, manuales y propensas a errores.</p>
-    <ul class="list-disc list-inside">
-      <li>+2 años desarrollando robots con UiPath</li>
-      <li>Experiencia con AWS, Scraping Web, SAP y desarrollo web</li>
-      <li>Manejo de UiPath Orchestrator y Automation Cloud</li>
-    </ul>
+  <section class="bg-white py-16 text-center">
+    <h2 class="text-2xl font-semibold mb-4">¿Quienes somos?</h2>
+    <p class="mb-4">En BotsCol, estamos comprometidos con la transformación digital de las empresas, ofreciendo soluciones de automatización que optimizan procesos y maximizan la eficiencia.<br>
+                    Nuestra misión es hacer que cada tarea repetitiva se convierta en una oportunidad para mejorar.</p>
   </section>
 
-  <!-- Servicios -->
-  <section class="bg-white py-12">
-    <div class="max-w-5xl mx-auto px-4">
-      <h2 class="text-2xl font-semibold mb-6 text-center">Servicios</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-gray-100 p-6 rounded-xl shadow">
-          <h3 class="text-lg font-bold mb-2">🔁 Automatización de procesos</h3>
-          <p>Automatizo tareas repetitivas como generación de reportes, validación de datos, gestión de correos o facturación.</p>
-        </div>
-        <div class="bg-gray-100 p-6 rounded-xl shadow">
-          <h3 class="text-lg font-bold mb-2">🤖 Bots personalizados</h3>
-          <p>Desarrollo robots que se adaptan a tu necesidad: trabajan por ti 24/7 sin errores.</p>
-        </div>
-        <div class="bg-gray-100 p-6 rounded-xl shadow">
-          <h3 class="text-lg font-bold mb-2">🧩 Consultoría RPA</h3>
-          <p>Analizo tus procesos y te propongo soluciones automatizadas eficientes y rentables.</p>
-        </div>
-        <div class="bg-gray-100 p-6 rounded-xl shadow">
-          <h3 class="text-lg font-bold mb-2">☁️ Implementación en la nube</h3>
-          <p>Despliego tus automatizaciones con UiPath Orchestrator o Automation Cloud.</p>
-        </div>
-      </div>
+  <!-- Demo Web Scraping -->
+  <section class="bg-blue-100 py-12">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-semibold mb-4">🔍 Demo: Web Scraping Automatizado</h2>
+      <p class="mb-6">Este robot extrae información de productos desde una tienda en línea y la guarda en un archivo Excel automáticamente. Ideal para monitorear precios, inventario o competencia.</p>
+      <a href="https://tu-enlace-demo.com" class="inline-block bg-green-600 text-white px-6 py-3 rounded-xl text-lg hover:bg-green-700 transition-all">
+        Ver Demo
+      </a>
     </div>
   </section>
 
@@ -83,17 +96,6 @@
     </div>
   </section>
 
-  <!-- Demo Web Scraping -->
-<section class="bg-white py-12">
-  <div class="max-w-3xl mx-auto px-4 text-center">
-    <h2 class="text-2xl font-semibold mb-4">🔍 Demo: Web Scraping Automatizado</h2>
-    <p class="mb-6">Este robot extrae información de productos desde una tienda en línea y la guarda en un archivo Excel automáticamente. Ideal para monitorear precios, inventario o competencia.</p>
-    <a href="https://tu-enlace-demo.com" class="inline-block bg-green-600 text-white px-6 py-3 rounded-xl text-lg hover:bg-green-700 transition-all">
-      Ver Demo
-    </a>
-  </div>
-</section>
-
   <!-- Beneficios -->
   <section class="bg-blue-100 py-12">
     <div class="max-w-5xl mx-auto px-4">
@@ -109,31 +111,65 @@
     </div>
   </section>
 
-  <!-- Contacto -->
-  <section class="py-12 px-4 max-w-2xl mx-auto">
-    <h2 class="text-2xl font-semibold mb-4 text-center">Contáctame</h2>
-    <form action="https://formsubmit.co/alejom21400@gmail.com" method="POST" class="bg-white p-6 rounded-xl shadow space-y-4">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://tu-dominio.com/gracias.html">
-      <div>
-        <label class="block text-sm font-medium mb-1">Nombre</label>
-        <input type="text" name="nombre" required class="w-full border rounded px-3 py-2">
+  <footer class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-2 gap-8 text-sm text-gray-600">
+      
+      <!-- Columna izquierda: Información de contacto -->
+      <div class="space-y-2">
+        <h3 class="text-gray-800 font-semibold mb-2">Contacto</h3>
+        <p>📞 Teléfono: +57 322 557 6146</p>
+        <p>📍 Dirección: Manizales, Colombia</p>
+        <p>✉️ Email: contacto@botscol.com</p>
       </div>
-      <div>
-        <label class="block text-sm font-medium mb-1">Correo electrónico</label>
-        <input type="email" name="email" required class="w-full border rounded px-3 py-2">
+  
+      <!-- Columna derecha: Enlaces -->
+      <div class="flex flex-col space-y-2">
+        <h3 class="text-gray-800 font-semibold mb-2">Navegación</h3>
+        <a href="index.html" class="hover:text-blue-600">Inicio</a>
+        <a href="servicios.html" class="hover:text-blue-600">Servicios</a>
+        <a href="sobre_nosotros.html" class="hover:text-blue-600">Sobre Nosotros</a>
+        <a href="contacto.html" class="hover:text-blue-600">Contacto</a>
       </div>
-      <div>
-        <label class="block text-sm font-medium mb-1">Mensaje</label>
-        <textarea name="mensaje" rows="4" required class="w-full border rounded px-3 py-2"></textarea>
+  
+    </div>
+  </footer>  
+
+  <footer class="bg-blue-100 shadow mt-0">
+    <div class="max-w-7xl mx-auto px-2 py-4 flex flex-col items-center text-sm text-gray-600">
+      <div class="flex items-center justify-center space-x-2">
+        <img src="logo.png" alt="Logo BotsCol" class="w-8 h-8">
+        <span class="font-medium text-gray-700">BotsCol © 2025 | Automatización Inteligente</span>
       </div>
-      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Enviar mensaje</button>
-    </form>
-  </section>
+    </div>
+  </footer>
 
   <!-- Botón flotante de WhatsApp -->
   <a href="https://wa.me/573225576146" class="whatsapp-float" target="_blank" rel="noopener">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="w-12 h-12">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="Icono de WhatsApp" class="w-12 h-12">
   </a>
+
+  <script>
+    // Seleccionamos todos los links del nav
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll("header nav a");
+  
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 80; // margen para considerar el header
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+  
+      navLinks.forEach(link => {
+        link.classList.remove("text-blue-600", "font-bold");
+        if (link.getAttribute("href") === `#${current}`) {
+          link.classList.add("text-blue-600", "font-bold");
+        }
+      });
+    });
+  </script>
+  
 </body>
 </html>
